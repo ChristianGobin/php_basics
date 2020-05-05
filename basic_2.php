@@ -16,10 +16,8 @@
         </h1>
         <ul>
             <li>Math</li>
-            <li>Array Operations</li>
-            <li>Loops</li>
-            <li>Conditionals</li>
-            <li>Private class props</li>
+            <li>Array Iteration using Loops</li>
+            <li>Handling User Input </li>
         </ul>
         <hr>
         <p>
@@ -89,6 +87,19 @@
             useForEach($basicArray);
             ?>
         </p>
+        <h6>Handling User Input with a Form</h6>
+        <form method="post">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comment</label>
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="comments">
+            <?php
+
+            ?>
+        </div>
     </div>
 </body>
 
