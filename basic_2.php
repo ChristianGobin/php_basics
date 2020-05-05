@@ -23,8 +23,8 @@
         </ul>
         <hr>
         <p>
+            <h6>PHP Math.</h6>
             <?php
-            echo "Php Starts Here: <br>";
             //Class calc calculates basic math operations on 2 ints and returns the data in a table.
             class calc
             {
@@ -62,7 +62,21 @@
 
             $compute = new calc;
             $compute->calculate(5, 4);
-            $compute->calculate(10, 20);
+            ?>
+        </p>
+        <hr>
+        <p>
+            <h6>Array Iteration & Loops</h6>
+            <?php
+            $basicArray = array(12, 44, 10, 27, 65);
+            //print array function using for loop
+            function printArray($array)
+            {
+                for ($x = 0; $x < count($array); $x++) {
+                    echo "<li>$array[$x]</li>";
+                };
+            }
+            printArray($basicArray);
             ?>
         </p>
     </div>
