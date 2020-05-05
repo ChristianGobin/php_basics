@@ -111,7 +111,9 @@ if ($myNike->size == 13) {
         </h1>
         <ul>
             <li>Data Types</li>
-            <li>Classes/OOP</li>
+            <li>Classes</li>
+            <li>Objects</li>
+            <li>Methods/Properties</li>
         </ul>
     </div>
 </body>
