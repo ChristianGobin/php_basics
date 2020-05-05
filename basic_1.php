@@ -22,6 +22,12 @@ $mDimension = array(
     array("Laura", "Anthony", "Paula"),
     array("Alice" => "alice@gmail.com", "Elizabeth" => "ebeth@gmail.com", "Sabrina" => "sab@gmail.com")
 );
+
+//Array Functions
+//number of specific occurences of values in array
+$repeatArray = array(1, 1, 1, 2, 2, 3, 4, 4, 5, 6);
+print_r(array_count_values($repeatArray));
+
 //view Structure and Values of variables.
 //print_r();
 //more descriptive => var_dump();
@@ -79,7 +85,6 @@ $myNike->setColor("Red");
 $myNike->setSize(13);
 $myNike->setBrand($myNike->brandMenu[0]);
 $myNike->displayProps();
-
 ?>
 
 <!DOCTYPE html>
