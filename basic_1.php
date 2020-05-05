@@ -23,10 +23,11 @@ $mDimension = array(
     array("Alice" => "alice@gmail.com", "Elizabeth" => "ebeth@gmail.com", "Sabrina" => "sab@gmail.com")
 );
 
-//Array Functions
-//number of specific occurences of values in array
+/*Array Functions
+number of specific occurences of values in array
 $repeatArray = array(1, 1, 1, 2, 2, 3, 4, 4, 5, 6);
 print_r(array_count_values($repeatArray));
+*/
 
 //view Structure and Values of variables.
 //print_r();
@@ -84,7 +85,13 @@ $myNike = new sneaker;
 $myNike->setColor("Red");
 $myNike->setSize(13);
 $myNike->setBrand($myNike->brandMenu[0]);
-$myNike->displayProps();
+
+//conditional display
+if ($myNike->size == 13) {
+    $myNike->displayProps();
+} else {
+    echo "Cannot display Sneaker Size";
+}
 ?>
 
 <!DOCTYPE html>
@@ -99,10 +106,13 @@ $myNike->displayProps();
 
 <body>
     <div class="container">
-        <?php echo $heading ?>
-        <p>
-            Sabrinas email is <?php echo $mDimension[2]["Sabrina"]; ?>
-        </p>
+        <h1>
+            PHP basics 1.
+        </h1>
+        <ul>
+            <li>Data Types</li>
+            <li>Classes/OOP</li>
+        </ul>
     </div>
 </body>
 
