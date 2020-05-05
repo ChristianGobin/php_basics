@@ -28,7 +28,9 @@ $heading = "<h1>PHP Heading Variable</h1>";
 </head>
 
 <body>
-    <?php echo $heading ?>
+    <div class="container">
+        <?php echo $heading ?>
+    </div>
 </body>
 
 </html>
