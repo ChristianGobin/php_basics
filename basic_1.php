@@ -43,12 +43,43 @@ class civic
     }
 };
 
+class sneaker
+{
+    public $size;
+    public $color;
+    public $brand;
+    public $brandMenu = array("nike", "vans", "adidas");
+    public function setBrand($brandfrmMenu)
+    {
+        return $this->brand = $brandfrmMenu;
+    }
+    public function setColor($color)
+    {
+        return $this->color = $color;
+    }
+    public function setSize($size)
+    {
+        return $this->size = $size;
+    }
+    public function displayProps()
+    {
+        echo $this->size, $this->color, $this->brand;
+    }
+}
+
 //instantiate class + accessing methods + editing a property of object
 $myCar = new civic;
 $myCar->drive(30);
 $myCar->dispMileage();
-$myCar->brand = "BMW";
+$myCar->brand = "BMW </br>";
 echo $myCar->brand;
+
+$myNike = new sneaker;
+$myNike->setColor("Red");
+$myNike->setSize(13);
+$myNike->setBrand($myNike->brandMenu[0]);
+$myNike->displayProps();
+
 ?>
 
 <!DOCTYPE html>

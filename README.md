@@ -3,6 +3,6 @@
 <ul>
     <li> Data Types </li>
     <li> Functions </li>
-    <li> Classes + Methods </li>
+    <li> OOP </li>
     <li> Common Interview Problems </li>
 </ul>
