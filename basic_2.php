@@ -1,38 +1,3 @@
-<?php
-$page_heading = "PHP basics 2";
-//Mathematical Operators
-function add($x, $y)
-{
-    $result = $x + $y;
-    return $result;
-}
-
-function subtract($x, $y)
-{
-    if ($x > $y) {
-        return $result = $x / $y;
-    } elseif ($y > $x) {
-        return $result = $y / $x;
-    } else {
-        return 0;
-    }
-}
-
-function multi($x, $y)
-{
-    $result = $x * $y;
-    return $result;
-}
-
-function divide($x, $y)
-{
-    $result = $x / $y;
-    return $result;
-}
-
-
-
-?>
 <html>
 
 <head>
@@ -45,7 +10,9 @@ function divide($x, $y)
 <body>
     <div class="container">
         <h1>
-            <?php echo $page_heading ?>
+            <?php
+            $page_heading = "PHP basics 2";
+            echo $page_heading; ?>
         </h1>
         <ul>
             <li>Math</li>
@@ -54,6 +21,50 @@ function divide($x, $y)
             <li>Conditionals</li>
             <li>Private class props</li>
         </ul>
+        <hr>
+        <p>
+            <?php
+            echo "Php Starts Here: <br>";
+            //Class calc calculates basic math operations on 2 ints and returns the data in a table.
+            class calc
+            {
+                public function calculate($x, $y)
+                {
+                    $sum = $x + $y;
+                    $difference = $x - $y;
+                    $product = $x * $y;
+                    $quotient = $x / $y;
+                    //echo table with results + display integers used;
+                    echo ("
+                    Numbers used : $x, $y. (Respectively)<br>
+                    <table class='table'>
+                    <thead>
+                    <tr>
+                    <th scope='col'></th>
+                      <th scope='col'>Sum</th>
+                      <th scope='col'>Difference</th>
+                      <th scope='col'>Product</th>
+                      <th scope='col'>Quotient</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <th scope='row'>Results</th>
+                      <td>$sum</td>
+                      <td>$difference</td>
+                      <td>$product</td>
+                      <td>$quotient</td>
+                    </tr>
+                    </tbody>
+                  </table>");
+                }
+            };
+
+            $compute = new calc;
+            $compute->calculate(5, 4);
+            $compute->calculate(10, 20);
+            ?>
+        </p>
     </div>
 </body>
 
