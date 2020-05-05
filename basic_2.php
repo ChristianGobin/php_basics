@@ -91,15 +91,13 @@
         <form method="post">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comment</label>
-                <textarea class="form-control" id="comment" rows="3"></textarea>
+                <input type="text" name="comment" />
                 <button type="submit">Submit</button>
             </div>
         </form>
-        <div class="comments">
-            <?php
-
-            ?>
-        </div>
+        <p>
+            <?php echo $_POST["comment"] ?>
+        </p>
     </div>
 </body>
 
