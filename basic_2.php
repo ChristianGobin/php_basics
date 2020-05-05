@@ -1,7 +1,34 @@
 <?php
 $page_heading = "PHP basics 2";
 //Mathematical Operators
+function add($x, $y)
+{
+    $result = $x + $y;
+    return $result;
+}
 
+function subtract($x, $y)
+{
+    if ($x > $y) {
+        return $result = $x / $y;
+    } elseif ($y > $x) {
+        return $result = $y / $x;
+    } else {
+        return 0;
+    }
+}
+
+function multi($x, $y)
+{
+    $result = $x * $y;
+    return $result;
+}
+
+function divide($x, $y)
+{
+    $result = $x / $y;
+    return $result;
+}
 
 
 
