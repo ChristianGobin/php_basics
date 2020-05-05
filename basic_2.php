@@ -69,14 +69,24 @@
             <h6>Array Iteration & Loops</h6>
             <?php
             $basicArray = array(12, 44, 10, 27, 65);
-            //print array function using for loop
+            //echo array using for loop
             function printArray($array)
             {
                 for ($x = 0; $x < count($array); $x++) {
-                    echo "<li>$array[$x]</li>";
+                    echo ("<li>$array[$x]</li>");
                 };
             }
+            //echo array using foreach
+            function useForEach($array)
+            {
+                foreach ($array as $value) {
+                    echo ("<li> $value </li>");
+                };
+            };
+            echo "For Loop Iteration: <br>";
             printArray($basicArray);
+            echo "ForEach Iteration: <br>";
+            useForEach($basicArray);
             ?>
         </p>
     </div>
