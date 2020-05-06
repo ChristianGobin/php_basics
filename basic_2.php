@@ -96,7 +96,13 @@
             </div>
         </form>
         <p>
-            <?php echo $_POST["comment"] ?>
+            <?php
+            if ($_POST["comment"] != null) {
+                echo $_POST["comment"];
+            } else {
+                echo "Waiting on comment";
+            };
+            ?>
         </p>
     </div>
 </body>
